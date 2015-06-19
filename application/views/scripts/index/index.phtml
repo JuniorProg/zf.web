@@ -1,14 +1,5 @@
 
-<h1><?php echo $this->lastId; ?></h1>
+<?php $this->headtitle('Home', PREPEND); //Задаем свой тайтл?>
 
-
-
-<?php
-
-    echo "<pre>";
-    print_r($this->posts);
-    echo "</pre>";
-
-
-
-?>
+<?php $this->headMeta()->appendName('keywords','zend,php,lesson')
+                       ->appendName('description','description of home page');?>

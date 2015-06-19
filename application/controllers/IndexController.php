@@ -23,7 +23,7 @@ class IndexController extends Zend_Controller_Action
         //$data = $postsmodel->fetchAll(null,null,3)->toArray(); // Выбор 3 записей
         //$data = $postsmodel->fetchAll(null,null,null,2)->toArray(); // Выбор записей начиная с 3
         //$this->view->posts = $data; // Опасный запрос
-        $this->view->posts = $postsmodel->getSqlSafe(); // Безопасный запрос
+       // $this->view->posts = $postsmodel->getSqlSafe(); // Безопасный запрос
        // $this->view->posts = $postsmodel->countPosts(); // Запрос с COUNT
 
        /* Вставка данных
@@ -43,8 +43,8 @@ class IndexController extends Zend_Controller_Action
         */
 
         // Удаление данных
-        $postsmodel->deletePost(2);
-        $postsmodel->myQuery();
+       // $postsmodel->deletePost(2);
+       // $postsmodel->myQuery();
 
     }
 

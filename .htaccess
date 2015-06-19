@@ -1,2 +1,3 @@
 # This should be omitted in the production environment
    SetEnv APPLICATION_ENV development
+   AddDefaultCharset UTF-8
